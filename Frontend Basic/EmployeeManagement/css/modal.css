@@ -1,0 +1,113 @@
+/* Add padding to containers */
+
+.modal-container {
+    padding: 16px;
+    background-color: white;
+    font-size: 18px;
+}
+
+
+/* Full-width input fields */
+
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus,
+input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+  /* Full-width input fields */
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Overwrite default styles of hr */
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+  
+  /* Set a style for the submit button */
+  .registerbtn, .editbtn {
+    background-color: #4CAF50;
+    font-size: 17px;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  #modalEdit .modal-header ,#modalAddNew .modal-header {
+      background-color: #7C7BAD;
+  }
+
+  .modal h2{
+      text-align: center;
+  }
+  .registerbtn: hover {
+    opacity: 1;
+  }
+  .confirmbtn {
+      margin-left: 20%;
+  }
+  .deletebtn {
+
+    background-color: #EF3A29;
+    color: white;
+    padding: 16px 20px;
+    margin: 20px 5%;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+    opacity: 0.8;
+  }
+  .deletebtn:hover{
+      opacity: 1;
+  }
+  #modalDelete .modal-header{
+      background-color:#EF3A29;
+  }
+  #modalDelete h4{
+      text-align: center;
+  }
+  .fa-trash {
+      font-size: 50px;
+      color: #EF3A29;
+  }
+  .cancel-del {
+    background-color:#F7F7F7;
+    color:Black;
+    padding: 16px 20px;
+    margin: 20px 0;
+    border: solid 1px #E6E8E7;
+    cursor: pointer;
+    width: 30%;
+    opacity: 1;
+
+  }
+  
+  /* Add a blue text color to links */
+  a {
+    color: dodgerblue;
+  }

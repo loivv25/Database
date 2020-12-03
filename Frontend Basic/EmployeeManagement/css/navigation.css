@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  background-color: #f1f1f1;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#navbar {
+  background-color:#7C7BAD;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: block;
+  transition: top 0.3s;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+  cursor: pointer;
+}
+#rightnavbar {
+  display: inline-block;
+  float: right;
+  margin-right: 50px;
+}
+
+#rightnavbar i{
+  display: inline-block;
+  color: white;
+  padding-right: 10px;
+  font-size: 30px;
+}
+#rightnavbar i:hover{
+  font-size: 33px;
+  transition: top 0.3s;
+  cursor: pointer;
+}
+
+#username {
+font-size: 18px;
+vertical-align: middle;
+color:white;
+}

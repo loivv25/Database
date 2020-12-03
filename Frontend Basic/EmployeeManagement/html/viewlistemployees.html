@@ -1,0 +1,138 @@
+<div class="container">
+    <div class="table-wrapper">
+        <div class="table-title">
+            <div class="row">
+                <div class="col-sm-8"><h2>Employee <b>Details</b></h2></div>
+                <div class="col-sm-4">
+                    <button type="button" class="btn btn-info add-new" data-toggle="modal" onclick="openAddModal()" id="add-new"><i class="fa fa-plus"></i> Add New</button>
+                </div>
+            </div>
+        </div>
+        <table class="table table-bordered">
+            <thead>
+                <tr><th id="id">ID</th>
+                    <th id="name">Name</th>
+                    <th id="dpmt">Department</th>
+                    <th id="phone">Phone</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="table-emp">
+            </tbody>
+        </table>
+       
+    </div>
+
+
+
+<div class="modal fade" id="modalAddNew">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Register form</h4>
+        </div>
+        <div class="modal-body">
+                <h2><b>Register Form</b></h2>
+                <hr>
+            <form>
+                <label for="name"><b>Fullname</b></label>
+                <input type="text" placeholder="Enter fullname" name="name" id="fname" required autofocus>
+            
+                <label for="department"><b>Department</b></label>
+                <input type="text" placeholder="Enter department" name="dpmt" id="fdpmt" required>
+
+                <label for="phone"><b>Phone</b></label>
+                <input type="text" placeholder="Enter phone number" name="phone" id="fphone" required>
+
+                <button type="button" class="registerbtn" onclick="addEmployee()">Register</button>
+            </form>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="modalEdit" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Edit form</h4>
+        </div>
+        <div class="modal-body">
+         
+            <form>
+                <h2><b>Edit User Infor </b> </h2>
+                <hr>
+            <div class="edit-form-body">
+
+              <label for="id"><b>ID</b></label>
+                <input type="text" id="fu-id" disabled>
+
+                <label for="name"><b>Fullname</b></label>
+                <input type="text" placeholder name="name" id="fu-name" value="">
+
+                <label for="department"><b>Department</b></label>
+                <input type="text" name="dpmt" id="fu-dpmt">
+
+                <label for="phone"><b>Phone</b></label>
+                <input type="text"  name="phone" id="fu-phone" >
+
+                <button onclick="updateEmployee()" type="button" class="editbtn" >Save</button>
+            </div>   
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
+
+
+<div class="modal fade" id="modalDelete" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h3 class="modal-title">Delete Confirm</h3>
+        </div>
+        <div class="modal-body">
+         
+                <h4>Do you want to delete <b id="d-user"></b>?
+                </h4>
+                <hr>
+                <form>
+                <div class="confirmbtn">
+                    <button onclick="deleteEmployee()" id="cf-delete" type="button" class="deletebtn" >Delete</button>
+
+                    <button onclick="hideModal('modalDelelte')" type="button" class="btn btn-default cancel-del" data-dismiss="modal">Cancel</button>
+                </div>
+                
+            </form>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="alert alert-success" id="success-alert" style="display: none;">
+  <button type="button" class="close" data-dismiss="alert">x</button>
+  <strong>Success! </strong>
+</div>
+</div>  

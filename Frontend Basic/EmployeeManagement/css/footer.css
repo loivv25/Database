@@ -1,0 +1,62 @@
+/* Style the footer */
+.footer{
+    width:100%;
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+.container-fluid{
+    padding: 0px 0px;
+    margin: 0px 0px;
+}
+.row {
+    background-color: #f1f1f1;
+    text-align: center;
+    width:100%;
+    margin:0px 0px;
+    padding:0px 0px;
+  }
+
+
+.col-md-5 .logo {
+    height: 60px;
+    margin-bottom: 15px;
+}
+.col-ms-12{
+    text-align: center;
+}
+
+.col-sm-12 .logo {
+    height:60px;
+}
+.col-md-5 {
+
+    padding: 20px 80px;  
+    font-size: 16px;
+}
+.col-md-4 {
+    padding: 20px 80px;  
+}
+.col-md-3 {
+    padding: 20px 80px; 
+    font-size: 18px; 
+    line-height: 2;
+}
+table .infor{
+    font-size: 19px;
+    float: left;
+    margin: 10px; 
+}
+table .icon{
+    font-size: 20px;
+    color:#287EB6;
+}
+.last{
+
+    height: 30px;
+    background-color:#7C7BAD ;
+}
+.last p{
+    font-size: 15px;
+    color:#f1f1f1;
+    padding-top:5px;
+}
